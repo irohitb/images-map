@@ -1,5 +1,5 @@
 {
-  "name": "get-images",
+  "name": "images-map",
   "version": "1.0.0",
   "description": "load images from unsplash, pexels, pixabay and shutterstock",
   "main": "lib/index.js",
@@ -23,7 +23,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/blendtale/get-images"
+    "url": "git+https://github.com/blendtale/images-map"
   },
   "author": "",
   "license": "ISC",

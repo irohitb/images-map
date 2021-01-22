@@ -1,8 +1,8 @@
-## Get Images
+## Images-map
 
-`Get images` is a simple library which maps response from various images api and returns to user (**written in typescript**).
+`images-map` is a simple library which maps response from various images api and returns to user (**written in typescript**).
 
-Currently `get images` supports `unsplash, pexels, pixabay and shutterstock`
+Currently `images-map` supports `unsplash, pexels, pixabay and shutterstock`
 
 ## Note
 
@@ -13,11 +13,11 @@ Currently `get images` supports `unsplash, pexels, pixabay and shutterstock`
 
 ## Installation
 
-`npm install get-images --save`
+`npm install images-map --save`
 
 or
 
-`yarn add get-images`
+`yarn add images-map`
 
 ## Usage
 
@@ -57,7 +57,7 @@ import ImageServices, {
   IMAGE_RESPONSE,
   IMAGE_DATA,
   SERVICENAME
-} from "get-images";
+} from "images-map";
 
 const InitImageService = new ImageServices(EnvironmentVariables);
 ```
@@ -139,7 +139,7 @@ Where `query` **Object** is same as above
 
 We have function not coupled with our main class, to use that you need to first `import` it
 
-`import {addBlobToImages} from 'get-images`
+`import {addBlobToImages} from 'images-map`
 
 and then pass the arrays of image objects recived from the image service
 
@@ -167,7 +167,7 @@ this will return Array of images with blob in it
 
 ### Add blob to image
 
-`import {addBlobToImage} from 'get-images`
+`import {addBlobToImage} from 'images-map`
 
 and the pass the Image Object recieved from image service
 
