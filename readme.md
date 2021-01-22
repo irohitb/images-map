@@ -76,18 +76,18 @@ Here `query` is an **object** containing image filters
 
 #### Query Object
 
-| **Value**  | **Type**                              | **Default** | **Required**                | **description**                                 | **example** |
-| ---------- | ------------------------------------- | ----------- | --------------------------- | ----------------------------------------------- | ----------- |
-| query      | string                                | none        | yes                         | search string for which you want to get results | london      |
-| min_height | string                                | null        | no                          | minimum height for imabe                        | 128         |
-| min_width  | string                                | null        | No                          | minimum width for the image                     | 128         |
-| max_width  | string                                | null        | no                          | maximum width for the image                     | 642         |
-| max_height | string                                | null        | no                          | maximum height for the image                    | 728         |
-| color      | string                                | null        | null                        | color peference for the image (comiing soon)    | 'red'       |
-| image_type | `photo` or `illustration` or `vector` | no          | what type of image you want | "photo"                                         |
-| order      | `latest` or `relavent`                | no          | what sort of image you want | `relavent`                                      |
-| page       | number                                | no          | no                          | use this to get more images or for pagination   | 2           |
-| per_page   | number                                | no          | no                          | number of results per page                      | 20          |
+| **Value**  | **Type**                              | **Default** | **Required** | **description**                                 | **example** |
+| ---------- | ------------------------------------- | ----------- | ------------ | ----------------------------------------------- | ----------- |
+| query      | string                                | none        | yes          | search string for which you want to get results | london      |
+| min_height | string                                | null        | no           | minimum height for imabe                        | 128         |
+| min_width  | string                                | null        | No           | minimum width for the image                     | 128         |
+| max_width  | string                                | null        | no           | maximum width for the image                     | 642         |
+| max_height | string                                | null        | no           | maximum height for the image                    | 728         |
+| color      | string                                | null        | null         | color peference for the image (comiing soon)    | 'red'       |
+| image_type | `photo` or `illustration` or `vector` | no          | no           | what type of image you want                     | "photo"     |
+| order      | `latest` or `relavent`                | no          | no           | what sort of image you want                     | `relavent`  |
+| page       | number                                | no          | no           | use this to get more images or for pagination   | 2           |
+| per_page   | number                                | no          | no           | number of results per page                      | 20          |
 
 #### Response
 
