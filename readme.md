@@ -23,14 +23,16 @@ or
 
 #### Get Api keys
 
-Currently the service supports
+Currently library supports getting images from
 
 - unsplash
 - pexels
 - pixabay
 - shutterstock
 
-Create object with keys of services you want to use (skip the ones you don't)
+#### Create env object
+
+Create `env object` with keys of services you want to use (skip the ones you don't)
 
 ```
 let env_variables = {
