@@ -1,0 +1,42 @@
+{
+  "name": "get-images",
+  "version": "1.0.0",
+  "description": "load images from unsplash, pexels, pixabay and shutterstock",
+  "main": "lib/index.js",
+  "types": "lib",
+  "scripts": {
+    "build": "npm run prettier:write && tsc -p .",
+    "prettier:base": "prettier --parser typescript --single-quote",
+    "prettier:check": "npm run prettier:base -- --list-different \"src/**/*.ts\"",
+    "prettier:write": "npm run prettier:base -- --write \"src/**/*.ts\""
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "src/**/*.ts": [
+      "npm run prettier:write",
+      "git add"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/blendtale/get-images"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/lodash": "^4.14.168",
+    "husky": "^4.2.5",
+    "lint-staged": "^10.2.10",
+    "prettier": "^2.0.5",
+    "typescript": "^4.1.3"
+  },
+  "dependencies": {
+    "axios": "^0.21.1",
+    "lodash": "^4.17.20",
+    "tslint": "^6.1.3"
+  }
+}
