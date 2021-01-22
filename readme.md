@@ -30,7 +30,7 @@ Currently the service supports
 - pixabay
 - shutterstock
 
-Create object with those keys
+Create object with keys of services you want to use (skip the ones you don't)
 
 ```
 let env_variables = {
