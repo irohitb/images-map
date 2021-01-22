@@ -71,7 +71,7 @@ export interface IMAGE_DATA {
   url: string
   name: string
   id: string
-  siza_small_url: string
+  small_url?: string
   imageSize?: string
 }
 
@@ -195,7 +195,7 @@ class ImageServices {
           color: image.color,
           name: image.alt_description || image.id, //TODO Determine image name from url
           url: image.urls.raw,
-          siza_small_url: image.urls.small
+          small_url: image.urls.small
         }
       })
       return { name: 'unsplash', images }
@@ -221,7 +221,7 @@ class ImageServices {
           height: image.height,
           name: image.id, //TODO Determine image name from url
           url: image.src.original,
-          siza_small_url: image.src.medium
+          small_url: image.src.medium
         }
       })
       return { name: 'pexels', images }
@@ -246,7 +246,7 @@ class ImageServices {
           height: image.previewHeight,
           name: image.id, //TODO Determine image name from url
           url: image.largeImageURL,
-          siza_small_url: image.previewURL,
+          small_url: image.previewURL,
           imageSize: image.imageSize
         }
       })
@@ -283,7 +283,7 @@ class ImageServices {
           height: image.assets.preview.height,
           name: image.assets.description || image.id, //TODO Determine image name from url
           url: image.assets.url,
-          siza_small_url: image.assets.huge_thumb.url
+          small_url: image.assets.huge_thumb.url
         }
       })
       return { name: 'shutterstock', images }
